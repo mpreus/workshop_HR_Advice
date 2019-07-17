@@ -1,0 +1,101 @@
+html, body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #F7FAFC;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+header {
+	background-color: #FFECD5;
+	height: 20vh;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+header > p {
+	font-size: 1.6rem;
+	font-style: italic;
+}
+
+footer {
+	background-color: #FFECD5;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+main {
+	height: 60vh;
+	margin: 0 auto;
+	max-width: 800px;
+	padding-bottom: 20px;
+	padding-top: 20px;	
+}
+
+h1 {
+	font-size: 3rem;
+	text-shadow: 2px 2px 2px grey;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3#myAdvice {
+	color: red;
+	font-family: 'Caveat', cursive;
+	font-size: 2.5rem;
+	margin: 20px auto;
+
+}
+
+.wrapper {
+	background-color: #D3EBFA;
+	max-width: 1200px;
+	text-align: center;
+}
+
+input#ageTyped {
+	border: 1px solid lightgrey;
+	border-radius: 4px;
+	box-shadow: inset 3px 3px 3px darkgrey;
+	font-size: 1.2rem;
+	line-height: 1.7rem;
+	text-align: right;
+	width: 200px;
+}
+
+button {
+	border: 1px solid lightgrey;
+	border-radius: 4px;
+	box-shadow: 3px 3px 3px darkgrey;
+	font-size: 1rem;
+	line-height: 1.2rem;
+	margin-top: 10px;
+	width: 200px;
+}
+
+img {
+	height: 120px;
+	width: 120px;
+}
+
+.piece-of-advice + div {
+	background-position: center;
+	background-size: 120px 120px;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+	box-shadow: 2px 2px 3px grey;
+	height: 120px;
+	margin: 0 auto;
+	width: 120px;
+}
+
+
