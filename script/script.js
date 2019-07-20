@@ -10,7 +10,7 @@ function init() {
 
 		if ( ageInput.value < 0 ) {
 			myAdvice.innerText = "Are you aware we are talking about age?"
-			ageInput.value = "";
+			ageInput.value = ""; ageInput.autofocus = true;
 			myAdvice.style.color = "MediumSlateBlue";
 			// to place a 'div' for picture:
 			let target = document.querySelector(".piece-of-advice");
@@ -22,7 +22,7 @@ function init() {
 		
 		else if ( ageInput.value >= 1 && ageInput.value < 13 ) {
 			myAdvice.innerText = "Children are not considered here. Hiring a child would be illegal."
-			ageInput.value = "";
+			ageInput.value = ""; ageInput.autofocus = true;
 			myAdvice.style.color = "red";
 			// to place a 'div' for picture:
 			let target = document.querySelector(".piece-of-advice");
@@ -34,7 +34,7 @@ function init() {
 
 		else if ( ageInput.value >= 13 && ageInput.value <= 16 ) {
 			myAdvice.innerText = "You are still underage. You need a parent permission to be hired."
-			ageInput.value = "";
+			ageInput.value = ""; ageInput.autofocus = true;
 			myAdvice.style.color = "red";
 			let target = document.querySelector(".piece-of-advice");
 			let newDiv = document.createElement("div");
@@ -44,7 +44,7 @@ function init() {
 
 		else if (ageInput.value > 16 && ageInput.value <= 22) {
 			myAdvice.innerText = "Temporary jobs offers possible. You'd better learn more."
-			ageInput.value = "";
+			ageInput.value = ""; ageInput.autofocus = true;
 			myAdvice.style.color = "green";
 			let target = document.querySelector(".piece-of-advice");
 			let newDiv = document.createElement("div");
@@ -54,7 +54,7 @@ function init() {
 
 		else if (ageInput.value > 22 && ageInput.value < 26) {
 			myAdvice.innerText = "You are at your best age but lack of experience may disqualify you."
-			ageInput.value = "";
+			ageInput.value = ""; ageInput.autofocus = true;
 			myAdvice.style.color = "green";
 			let target = document.querySelector(".piece-of-advice");
 			let newDiv = document.createElement("div");
@@ -64,7 +64,7 @@ function init() {
 
 		else if (ageInput.value >= 26 && ageInput.value < 32) {
 			myAdvice.innerText = "You've learned a lot and got some experience. Get this job!."
-			ageInput.value = "";
+			ageInput.value = ""; ageInput.autofocus = true;
 			myAdvice.style.color = "green";
 			let target = document.querySelector(".piece-of-advice");
 			let newDiv = document.createElement("div");
@@ -74,7 +74,7 @@ function init() {
 
 		else if (ageInput.value >= 32 && ageInput.value < 40) {
 			myAdvice.innerText = "You are getting older. Younger candidates are coming."
-			ageInput.value = "";
+			ageInput.value = ""; ageInput.autofocus = true;
 			myAdvice.style.color = "red";
 			let target = document.querySelector(".piece-of-advice");
 			let newDiv = document.createElement("div");
@@ -84,7 +84,7 @@ function init() {
 
 		else if (ageInput.value >= 40 && ageInput.value < 55) {
 			myAdvice.innerText = "You'd better pretend you are 25 (and have 20+ years of experience)."
-			ageInput.value = "";
+			ageInput.value = ""; ageInput.autofocus = true;
 			myAdvice.style.color = "red";
 			let target = document.querySelector(".piece-of-advice");
 			let newDiv = document.createElement("div");
@@ -94,7 +94,7 @@ function init() {
 
 		else if (ageInput.value >= 55 && ageInput.value < 65) {
 			myAdvice.innerText = "I'm affraid you need a wide net of contacts to be hired."
-			ageInput.value = "";
+			ageInput.value = ""; ageInput.autofocus = true;
 			myAdvice.style.color = "red";
 			let target = document.querySelector(".piece-of-advice");
 			let newDiv = document.createElement("div");
@@ -104,7 +104,7 @@ function init() {
 
 		else if (ageInput.value >= 65 && ageInput.value < 99) {
 			myAdvice.innerText = "This is your time to rest and enjoy grand children."
-			ageInput.value = "";
+			ageInput.value = ""; ageInput.autofocus = true;
 			myAdvice.style.color = "red";
 			let target = document.querySelector(".piece-of-advice");
 			let newDiv = document.createElement("div");
@@ -114,7 +114,7 @@ function init() {
 		
 		else if (ageInput.value >= 99) {
 			myAdvice.innerText = "Nice try!"
-			ageInput.value = "";
+			ageInput.value = ""; ageInput.autofocus = true;
 			myAdvice.style.color = "grey";
 			let target = document.querySelector(".piece-of-advice");
 			let newDiv = document.createElement("div");
