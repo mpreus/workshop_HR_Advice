@@ -8,7 +8,7 @@ function init() {
 		let ageInput = document.getElementById("ageTyped");
 		let myAdvice = document.getElementById("myAdvice");
 
-		if ( ageInput.value < 0 ) {
+		if ( ageInput.value <= 0 ) {
 			myAdvice.innerText = "Are you aware we are talking about age?"
 			ageInput.value = ""; ageInput.autofocus = true;
 			myAdvice.style.color = "MediumSlateBlue";
@@ -24,11 +24,9 @@ function init() {
 			myAdvice.innerText = "Children are not considered here. Hiring a child would be illegal."
 			ageInput.value = ""; ageInput.autofocus = true;
 			myAdvice.style.color = "red";
-			// to place a 'div' for picture:
 			let target = document.querySelector(".piece-of-advice");
 			let newDiv = document.createElement("div");
 			target.parentNode.insertBefore( newDiv, target.nextSibling );
-			// to place appropriate picture:
 			newDiv.style.backgroundImage = "url('./images/Judge.svg')";
 		}
 
