@@ -121,5 +121,13 @@ function init() {
 			target.parentNode.insertBefore( newDiv, target.nextSibling );
 			newDiv.style.backgroundImage = "url('./images/Grandma.svg')";
 		}
+		else if (typeof ageInput.value != "number") {
+			myAdvice.innerText = "NUMBERS ONLY, PLEASE!"
+			ageInput.value = ""; ageInput.autofocus = true;
+			myAdvice.style.color = "violet";
+			let target = document.querySelector(".piece-of-advice");
+			let newDiv = document.createElement("div");
+			target.parentNode.insertBefore( newDiv, target.nextSibling );
+		}
 	}	
 }
