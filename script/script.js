@@ -124,10 +124,11 @@ function init() {
 		else if (typeof ageInput.value != "number") {
 			myAdvice.innerText = "NUMBERS ONLY, PLEASE!"
 			ageInput.value = ""; ageInput.autofocus = true;
-			myAdvice.style.color = "violet";
+			myAdvice.style.color = "red";
 			let target = document.querySelector(".piece-of-advice");
 			let newDiv = document.createElement("div");
 			target.parentNode.insertBefore( newDiv, target.nextSibling );
+			newDiv.style.backgroundImage = "url('./images/Numbers_only.svg')";
 		}
 	}	
 }
