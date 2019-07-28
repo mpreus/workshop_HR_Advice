@@ -30,7 +30,21 @@ footer {
 }
 
 footer > p {
-	font-size: 1.25rem;
+	font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 900px) {
+	footer {
+		background-color: #FFECD5;
+		margin: 0;
+		height: 40px;
+		padding: 1vh 1vh;
+		text-align: center;
+	}
+
+	footer > p {
+		font-size: 1.25rem;
+	}
 }
 
 main {
@@ -102,15 +116,15 @@ button:hover {
 
 @media only screen and (min-width: 900px) {
 	.piece-of-advice + div {
-	background-position: cover;
-	background-repeat: no-repeat;
-	background-size: 400px 400px;
-	border: 1px solid lightgrey;
-	border-radius: 3px;
-	box-shadow: 2px 2px 3px grey;
-	height: 400px;
-	margin: 0 auto;
-	width: 400px;
+		background-position: cover;
+		background-repeat: no-repeat;
+		background-size: 400px 400px;
+		border: 1px solid lightgrey;
+		border-radius: 3px;
+		box-shadow: 2px 2px 3px grey;
+		height: 400px;
+		margin: 0 auto;
+		width: 400px;
 	}
 }
 
