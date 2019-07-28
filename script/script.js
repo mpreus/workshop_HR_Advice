@@ -3,6 +3,26 @@ document.addEventListener("DOMContentLoaded", init);
 function init() {
 	document.getElementById("button").addEventListener("click", myScript);
 	
+	document.querySelector("button#button").addEventListener("click", showAlert);
+		let count = 0;
+		function showAlert(e) {
+			e.preventDefault();
+			count += 1;
+			if (count === 4) {
+				Swal.fire({
+					title: "Satisfied?",
+					text: "Make your day by clicking instead of getting to work!",
+					confirmButtonText: "Close the tab",
+					width: "600px",
+					background: "#FFECD5",
+					confirmButtonColor: "#1f203a",
+					imageUrl: "images/lazy.svg",
+					imageWidth: "300px",
+					imageHeight: "300px"
+				});
+			}	
+		}
+	
 	function myScript(e) {
 		e.preventDefault()
 		let ageInput = document.getElementById("ageTyped");
