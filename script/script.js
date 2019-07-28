@@ -13,7 +13,7 @@ function init() {
 					title: "Satisfied?",
 					text: "Make your day by clicking instead of getting to work!",
 					confirmButtonText: "Close the tab",
-					width: "600px",
+					width: "400px",
 					background: "#FFECD5",
 					confirmButtonColor: "#1f203a",
 					imageUrl: "images/lazy.svg",
